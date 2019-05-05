@@ -5,12 +5,14 @@ Budget Comparison
 <h1> Input your information </h1>
 <script>
 function createAccount(){
-    var weeklybeforetax = document.getElementById("hoursworked").value;
+    var weeklybeforetax = document.getElementById("wage").value * document.getElementById("hoursWorked").value;
+    //window.alert(weeklybeforetax)
     var monthly = (weeklybeforetax/7) * 30;
     var yearly = monthly * 12;
     var weeklyaftertax = weeklybeforetax * 0.85;
     var monthlyaftertax = monthly * 0.85;
     var yearlyaftertax = yearly * 0.85;
+    document.getElementById("printer").innerHTML = "Weekly Before tax, After Tax: " + weeklybeforetax + "," + weeklyaftertax + "\n" + "Monthly Before tax, After Tax: " + monthly + "," + monthlyaftertax + "\n" + "Yearly Before tax, After Tax: " + yearly + "," + yearlyaftertax + "\n";
 	user = new userProfile(document.getelementbyId("wage").value,document.getelementbyId("hoursWorked").value,document.getelementbyId("foodWeekly").value,document.getelementbyId("transportationWeekly").value,document.getelementbyId("housingMonthly").value,document.getelementbyId("utilitiesMonthly").value,document.getelementbyId("clothingMonthly").valuedocument.getelementbyId("insuranceMonthly").value,document.getelementbyId("variousWeekly").value)
 }
 </script>
@@ -46,12 +48,11 @@ function createAccount(){
   <button type="button" value="Submit" onclick ="createAccount();" >Submit</button>
 </body>
 <body>
+    <textarea id = "printer" rows="4" cols="100"></textarea>
     <p>Before Tax________________________________________After Tax</p>
-    <p id = "weeklyearning"></p>Your Weekly Earning<p id = "weeklyearningaftertax"></p>
+    <p id = "weeklyearning"></p>Your Weekly Earning: <p id = "weeklyearningaftertax"></p>
     <p id = "monthlyearning"></p>Your Monthly Earnings: <p id = "monthlyeanringaftertax"></p>
     <p id = "yearlyearning"></p>Your Yearly Earnings: <p id = "yearlyeanringaftertax"></p>
-
-
 </body>
 
 </html>
