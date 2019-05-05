@@ -3,12 +3,18 @@
 Budget Comparison
 </title>
 <h1> Input your information </h1>
-<script src ="userProfile.js">
+<script>
 function createAccount(){
+    var weeklybeforetax = document.getElementById("hoursworked").value;
+    var monthly = (weeklybeforetax/7) * 30;
+    var yearly = monthly * 12;
+    var weeklyaftertax = weeklybeforetax * 0.85;
+    var monthlyaftertax = monthly * 0.85;
+    var yearlyaftertax = yearly * 0.85;
 	user = new userProfile(document.getelementbyId("wage").value,document.getelementbyId("hoursWorked").value,document.getelementbyId("foodWeekly").value,document.getelementbyId("transportationWeekly").value,document.getelementbyId("housingMonthly").value,document.getelementbyId("utilitiesMonthly").value,document.getelementbyId("clothingMonthly").valuedocument.getelementbyId("insuranceMonthly").value,document.getelementbyId("variousWeekly").value)
 }
 </script>
-<form>
+<body>
   What's your hourly wage?<br>
   <input type="number" id="wage">
   <br>
@@ -37,8 +43,16 @@ function createAccount(){
   <input type="number" id ="variousWeekly">
   <br>
   <br>
-  <input type="button" value="Submit" onclick =createAccount(); >
-</form> 
+  <button type="button" value="Submit" onclick ="createAccount();" >Submit</button>
+</body>
+<body>
+    <p>Before Tax________________________________________After Tax</p>
+    <p id = "weeklyearning"></p>Your Weekly Earning<p id = "weeklyearningaftertax"></p>
+    <p id = "monthlyearning"></p>Your Monthly Earnings: <p id = "monthlyeanringaftertax"></p>
+    <p id = "yearlyearning"></p>Your Yearly Earnings: <p id = "yearlyeanringaftertax"></p>
+
+
+</body>
 
 </html>
  
