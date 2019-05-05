@@ -1,124 +1,61 @@
 <style type="text/css">
 
+body {
+  border: 1px solid powderblue;
+  background-image: url('background.png');
+  text-align: center;
+  
+}
+
+#center {
+  text-align: center;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+head {
+  text-align: center;
+  background-image: url('background.png');
+
+}
+
 h1 {
   color: blue;
   font-size: 45px;
   font-family: verdana;
+  border: 1px solid powderblue;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+h2 {
+  color: red;
+  font-size: 35px;
   text-align: center;
 }
 
-head{
-  background-image: url('fishtank.jpg');
-
-}
-
-body{
-  background-image: url('fishtank.jpg');
-
-}
-
-/*p {
+h3{
+  color: black;
+  font-size: 29px;
   text-align: center;
-  color: yellow;
-  font-size: 25px;
-  font-family:fantasy;
-  font-weight: bold;
-  font-weight: 900;
-} */
-
-#tip1{
-    text-align: center;
-    color: yellow;
-    font-size: 25px;
-    font-family:fantasy;
-    font-weight: bold;
-    font-weight: 900;
-  }
-
-#tip2{
-
-    text-align: center;
-    color: yellow;
-    font-size: 25px;
-    font-family:fantasy;
-    font-weight: bold;
-    font-weight: 900;
-  }
-
-#tip3{
-
-    text-align: center;
-    color: yellow;
-    font-size: 25px;
-    font-family:fantasy;
-    font-weight: bold;
-    font-weight: 900;
-
-}
-
-#tip4{text-align: center;
-color: yellow;
-font-size: 25px;
-font-family:fantasy;
-font-weight: bold;
-font-weight: 900;
-}
-
-#tip5{text-align: center;
-color: yellow;
-font-size: 25px;
-font-family:fantasy;
-font-weight: bold;
-font-weight: 900;
-}
-
-#tip6 {
   text-align: center;
-  color: yellow;
-  font-size: 25px;
-  font-family:fantasy;
-  font-weight: bold;
-  font-weight: 900;
 }
 
-#tip7 {
-  text-align: center;
-  color: yellow;
-  font-size: 25px;
-  font-family:fantasy;
-  font-weight: bold;
-  font-weight: 900;
-}
-
-#tip8 {
-  text-align: center;
-  color: yellow;
-  font-size: 25px;
-  font-family:fantasy;
-  font-weight: bold;
-  font-weight: 900;
-}
-
-#tip9 {
-  text-align: center;
-  color: yellow;
-  font-size: 25px;
-  font-family:fantasy;
-  font-weight: bold;
-  font-weight: 900;
-}
-
-#tip10 {
-  text-align: center;
-  color: yellow;
-  font-size: 25px;
-  font-family:fantasy;
-  font-weight: bold;
-  font-weight: 900;
-}
-
-
-
-#centerthis {
+p {
+  color: red;
   text-align: center;
 }
