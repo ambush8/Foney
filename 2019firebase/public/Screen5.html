@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <h1>Financial Tips</h1>
+      <input id = "tips" type = "text"  value = "Enter a tip for other users plz?" size = "100px"> 
+      <button id = "submit" onclick= "newTip();">Submit</button><button id = "submit" onclick= "refresh();">Refresh</button>
+      <p id = "tip1">Tip1</p>
+      <p id = "tip2">Tip2</p>
+      <p id = "tip3">Tip3</p>
+      <p id = "tip4">Tip4</p>
+      <p id = "tip5">Tip5</p>
+      <p id = "tip6">Tip6</p>
+      <p id = "tip7">Tip7</p>
+      <p id = "tip8">Tip8</p>
+      <p id = "tip9">Tip9</p>
+      <p id = "tip10">Tip10</p>
+
+     <script>
+         var tips = ["List out your debt","Pay more than the minimum on your credit card","Calculate your daily interest","Automate your savings","Do an annual review","Write down your goals","Have a no-spend day","Set up alerts","Create a file for taxes","Plan fast meals","Up your retirement contribution","Use cash in certain budget categories","Create an anti-budget","Make a five-minute call and ask about discounts","Update your beneficiaries","Check your credit report","Check your credit score","Go digital","Know your real hourly rate","Calculate your net worth","Sign up for autopay on your debt","Create targeted savings accounts","Monitor spending","Unsubscribe from sales emails","Find out if you need a raise","Start saving for the holidays now","Find investment opportunities anywhere","Put your spare change to work","Adjust your tax withholding","Sell unwanted goods","Tweak your budget for the new year"];
+         refresh()
+         function newTip(){
+             tips.push(document.getElementById("tips").value);
+             console.log(tips);
+             
+         }
+
+         function refresh(){
+            var min=0; 
+            var max=tips.length - 1;  
+            var random =Math.floor(Math.random() * (+max - +min)) + +min; 
+             document.getElementById("tip1").innerHTML = tips[random];
+             var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip2").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip3").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip4").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip5").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip6").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip7").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip8").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip9").innerHTML = tips[random];
+            var random =Math.floor(Math.random() * (+max - +min)) + +min;
+            document.getElementById("tip10").innerHTML = tips[random];
+         }
+         
+     </script>
+
+</head>
+</html>
+<!--Have the input box export to append to a list then on multible output texts have it randomly show a bunch of tips inside the list. Update every 30 seconds to 2 minutes-->
