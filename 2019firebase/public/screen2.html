@@ -1,0 +1,44 @@
+<html>
+<title>
+Budget Comparison
+</title>
+<h1> Input your information </h1>
+<script src ="userProfile.js">
+function createAccount(){
+	user = new userProfile(document.getelementbyId("wage").value,document.getelementbyId("hoursWorked").value,document.getelementbyId("foodWeekly").value,document.getelementbyId("transportationWeekly").value,document.getelementbyId("housingMonthly").value,document.getelementbyId("utilitiesMonthly").value,document.getelementbyId("clothingMonthly").valuedocument.getelementbyId("insuranceMonthly").value,document.getelementbyId("variousWeekly").value)
+}
+</script>
+<form>
+  What's your hourly wage?<br>
+  <input type="number" id="wage">
+  <br>
+  How many hours a week do you work? <br>
+  <input type="number" id="hoursWorked">
+  <br>
+  How much do you spend on food every week? <br>
+  <input type="number" id="foodWeekly">
+  <br>
+  How much do you spend on transportation every week? <br>
+  <input type="number" id="transportationWeekly">
+  <br>
+  How much do you spend on housing monthly? <br>
+  <input type="number" id="housingMonthly">
+  <br>
+  How much do you spend on utilities monthly?<br>
+  <input type="number" id ="utilitiesMonthly">
+  <br>
+  How much do you spend on clothing monthly?<br>
+  <input type="number" id ="clothingMonthly">
+  <br>
+  How much do your insurances cost monthly?<br>
+  <input type="number" id ="insuranceMonthly">
+  <br>
+   Any other necessary weekly costs?<br>
+  <input type="number" id ="variousWeekly">
+  <br>
+  <br>
+  <input type="button" value="Submit" onclick =createAccount(); >
+</form> 
+
+</html>
+ 
