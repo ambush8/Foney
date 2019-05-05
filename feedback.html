@@ -1,0 +1,74 @@
+
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Purchase Page</title>
+<link rel="icon" type="images/png" href="background.png"/>
+<script type="text/javascript" src="givefeedback.js"></script>
+
+<style>
+textarea{resize:none}
+div{
+    width:500px;
+background-color:blue;
+color:#ffff00;
+margin: auto;
+border: 5px solid #ffff00;
+font-family:'Abril Fatface', cursive;
+}
+
+p {
+  text-align: center;
+}
+
+</style>
+
+</head>
+<h1 style="text-align:center; font-family:courier"> Let's Begin! </h1>
+<body style="text-align:center;background-color:grey;">
+<img src>
+<div>
+<form action="mailto:itachishrestha@gmail.com" method="post" enctype="type/plain">
+
+How much do you make per hour?:<input type="text" id="wage" placeholder="example: 8.50" required  />
+<br>
+How many hours do you work per week?:<input type="text" id="hoursWorked" placeholder="example: 60" required />
+
+<br>
+<br>
+<button onclick="myFunc()">Enter Data</button>
+
+
+<div id="secondpart" style="visibility: hidden;">
+<fieldset><legend>Personalized Information</legend>
+  Your Weekly Earnings:<textarea type="text" id="printer" readonly> </textarea> <textarea type="text" id="sideprinter" readonly></textarea>
+  <br>
+  Your Monthly Earnings:<textarea type="text" id="printer2" readonly> </textarea> <textarea type="text" id="sideprinter2" readonly></textarea>
+  <br>
+  Your Yearly Earnings:<textarea type="text" id="printer3" readonly> </textarea> <textarea type="text" id="sideprinter3" readonly></textarea>
+</fieldset>
+
+How much do you spend on each of these categories?: <br/>
+Rent  <input type="text" placeholder="ex: 5.50" required />
+<br>
+Utilities  <input type="text" placeholder="ex: 5.50" required />
+<br>
+Food  <input type="text" placeholder="ex: 5.50" required />
+<br>
+Transportation  <input type="text" placeholder="ex: 5.50" required />
+<br>
+Entertainment  <input type="text" placeholder="ex: 5.50" required />
+<br>
+Clothing  <input type="text" placeholder="ex: 5.50" required />
+<br>
+Miscellanuous  <input type="text" placeholder="ex: 5.50" required />
+<br>
+Insurance  <input type="text" placeholder="ex: 1000" required />
+<br>
+<input type="submit">
+<input type="reset">
+</div>
+</form></div>
+</body>
+</html>

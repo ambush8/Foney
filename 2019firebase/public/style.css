@@ -1,0 +1,124 @@
+<style type="text/css">
+
+h1 {
+  color: blue;
+  font-size: 45px;
+  font-family: verdana;
+  text-align: center;
+}
+
+head{
+  background-image: url('fishtank.jpg');
+
+}
+
+body{
+  background-image: url('fishtank.jpg');
+
+}
+
+/*p {
+  text-align: center;
+  color: yellow;
+  font-size: 25px;
+  font-family:fantasy;
+  font-weight: bold;
+  font-weight: 900;
+} */
+
+#tip1{
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+    font-family:fantasy;
+    font-weight: bold;
+    font-weight: 900;
+  }
+
+#tip2{
+
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+    font-family:fantasy;
+    font-weight: bold;
+    font-weight: 900;
+  }
+
+#tip3{
+
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+    font-family:fantasy;
+    font-weight: bold;
+    font-weight: 900;
+
+}
+
+#tip4{text-align: center;
+color: yellow;
+font-size: 25px;
+font-family:fantasy;
+font-weight: bold;
+font-weight: 900;
+}
+
+#tip5{text-align: center;
+color: yellow;
+font-size: 25px;
+font-family:fantasy;
+font-weight: bold;
+font-weight: 900;
+}
+
+#tip6 {
+  text-align: center;
+  color: yellow;
+  font-size: 25px;
+  font-family:fantasy;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+#tip7 {
+  text-align: center;
+  color: yellow;
+  font-size: 25px;
+  font-family:fantasy;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+#tip8 {
+  text-align: center;
+  color: yellow;
+  font-size: 25px;
+  font-family:fantasy;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+#tip9 {
+  text-align: center;
+  color: yellow;
+  font-size: 25px;
+  font-family:fantasy;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+#tip10 {
+  text-align: center;
+  color: yellow;
+  font-size: 25px;
+  font-family:fantasy;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+
+
+#centerthis {
+  text-align: center;
+}
