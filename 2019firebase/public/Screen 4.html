@@ -1,0 +1,65 @@
+<html>
+<h2> Weekly Budget Tracker </h2>
+<table>
+<tr>
+<th>Category</th>
+<th>Remaining Money</th>
+<th>Spent Today</th>
+</tr>
+<tr>
+<td>Rent</td>
+<td><p id = "rent">150</p></td>
+<td> <input type = "number" id="mrent"</td>
+</tr>
+<tr>
+<td>Food</td>
+<td><p id = "food">70</p></td>
+<td> <input type = "number" id="mfood"</td>
+</tr>
+<tr>
+<td>Utilities</td>
+<td><p id="utilities">20</p></td>
+<td> <input type = "number" id="mutilities"</td>
+</tr>
+<tr>
+<td>Transportation</td>
+<td><p id = "transportation">75</p></td>
+<td> <input type = "number" id="mtransportation"</td>
+</tr>
+<tr>
+<td>Clothing</td>
+<td><p id = "clothing">15</p></td>
+<td> <input type = "number" id="mclothing"</td>
+</tr>
+<tr>
+<td>Entertainment</td>
+<td><p id = "entertainment">45</p></td>
+<td> <input type = "number" id="mentertainment"</td>
+</tr>
+<tr>
+<td>Miscellaneous</td>
+<td><p id = "misc">100</td>
+<td> <input type = "number" id="mmisc"</td>
+</tr>
+</table>
+<button id = "Submit" onclick="subtract();">Submit</button>
+
+<script>
+function subtract(){
+  document.getElementById("rent").innerHTML = document.getElementById("rent").innerHTML - document.getElementById("mrent").value
+  document.getElementById("food").innerHTML = document.getElementById("food").innerHTML - document.getElementById("mfood").value
+  document.getElementById("utilities").innerHTML = document.getElementById("utilities").innerHTML - document.getElementById("mutilities").value
+  document.getElementById("transportation").innerHTML = document.getElementById("transportation").innerHTML - document.getElementById("mtransportation").value
+  document.getElementById("clothing").innerHTML = document.getElementById("clothing").innerHTML - document.getElementById("mclothing").value
+  document.getElementById("entertainment").innerHTML = document.getElementById("entertainment").innerHTML - document.getElementById("mentertainment").value
+  document.getElementById("misc").innerHTML = document.getElementById("misc").innerHTML - document.getElementById("mmisc").value
+  document.getElementById("mrent").value = ""
+  document.getElementById("mfood").value = ""
+  document.getElementById("mutilities").value = ""
+  document.getElementById("mtransportation").value = ""
+  document.getElementById("mclothing").value = ""
+  document.getElementById("mentertainment").value = ""
+  document.getElementById("mmisc").value = ""
+}
+</script>
+</html>
